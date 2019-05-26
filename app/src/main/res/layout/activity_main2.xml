@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.app.FragmentTabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/RootView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0"
+                android:orientation="horizontal"
+                android:showDividers="none"/>
+
+        <RelativeLayout
+                android:id="@+id/layout_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:visibility="gone"
+                android:animateLayoutChanges="true">
+            <LinearLayout
+                    android:id="@+id/simple_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@android:id/tabs"
+                    android:orientation="horizontal"
+                    >
+
+
+                <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0" />
+
+                <FrameLayout
+                        android:id="@+id/realtabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/shadow_toolbar"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shadow_tabbar"
+                android:clickable="false"/>
+
+
+    </RelativeLayout>
+
+</android.support.v4.app.FragmentTabHost>
+
+

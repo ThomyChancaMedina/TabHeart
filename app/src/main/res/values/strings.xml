@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_hand">Stop heart</string>
+    <string name="title_heart">Heart</string>
+
+
+    <string name="presented_by">Presented by Tutorialwing.com</string>
+    <string name="no_image">No Image</string>
+    <string name="profile">Profile</string>
+    <string name="recent">Recent</string>
+    <string name="home">Home</string>
+
+
+
+    <string name="tab_screen">Pantalla de navegación</string>
+
+
+
+</resources>
