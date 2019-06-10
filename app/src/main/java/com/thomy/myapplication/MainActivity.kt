@@ -7,6 +7,7 @@ import android.content.Intent
 import android.os.Bundle
 
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -37,6 +38,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+
+    }
+
+    @Override
+   fun showMessage(message:String):Unit{
+
+        Toast.makeText(this,message,Toast.LENGTH_LONG).show()
 
     }
 
